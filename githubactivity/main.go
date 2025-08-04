@@ -82,9 +82,9 @@ func getAllUserRepos(w http.ResponseWriter, r * http.Request) {
 func main() {
 	r := mux.NewRouter()
 
-    r.HandleFunc("/", homePage).Methods("GET").Schemes("https")
-    r.HandleFunc("/events/{username}", getAllUserActivties).Methods("GET").Schemes("https")
-    r.HandleFunc("/repos/{username}", getAllUserRepos).Methods("GET").Schemes("https")
+    r.HandleFunc("/", homePage).Methods("GET")
+    r.HandleFunc("/events/{username}", getAllUserActivties).Methods("GET")
+    r.HandleFunc("/repos/{username}", getAllUserRepos).Methods("GET")
 
 	fmt.Println("Server is running...")
     http.ListenAndServe(":3030", r)
