@@ -7,4 +7,5 @@ This is a repository for my GoLang training.
 1. [CalculatorApp](./calculator/)
 2. [Ticket Booking App](./ticket-booking-cli/)
 3. [Note App](./noteapp/)
-4.
+4. [Github Activity](./githubactivity/)
+5. [Movie App](./movieapp/)
